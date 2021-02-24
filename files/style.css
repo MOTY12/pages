@@ -63,7 +63,7 @@ a {
     box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
     text-align: center;
     box-sizing: border-box;
-    height: 90vh;
+    height: 100vh;
     padding: 50px;
     width: 100%;
     display: flex;
@@ -77,7 +77,7 @@ a {
     box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
     text-align: center;
     box-sizing: border-box;
-    height: 90vh;
+    height: 100vh;
     padding: 50px;
     width: 100%;
     display: flex;
@@ -217,7 +217,7 @@ select {
     box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
     text-align: center;
     box-sizing: border-box;
-    height: 90vh;
+    height: 100vh;
     padding: 50px;
     width: 100%;
     display: flex;
