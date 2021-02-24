@@ -76,6 +76,7 @@ a {
     justify-content: space-between !important;
     width: 80%;
     margin: auto;
+    margin-top: 45px;
 }
 
 .left_con2 {
@@ -163,6 +164,10 @@ a {
     color: #8CA4AF;
 }
 
+.but {
+    margin-bottom: 20px;
+}
+
 select {
     color: rgba(140, 164, 175, 0.5) !important
 }
@@ -176,11 +181,16 @@ select {
     border: none !important;
     background: rgba(140, 164, 175, 0.1) !important;
     border-radius: 3px !important;
-    padding: 5px;
+    padding: 15px;
     margin-top: 5px !important;
     margin-bottom: 5px !important;
     font-size: 18px !important;
     box-sizing: border-box !important;
+    height: 50px !important;
+}
+
+.do input {
+    height: auto !important;
 }
 
 .form-control {
@@ -216,7 +226,7 @@ select {
 }
 
 .right_con {
-    background: #f9f9f9;
+    background: #f9f9f9 !important;
     box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
     text-align: center;
     box-sizing: border-box;
@@ -232,6 +242,7 @@ select {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 40px !important;
 }
 
 .info p {
@@ -303,7 +314,32 @@ select {
     width: 80%;
 }
 
+#t2 {
+    margin-top: -105px;
+
+}
+
+.cac {
+    position: absolute;
+    top: 10;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+}
+
+
 @media(max-width:900px) {
+    #t2 {
+        margin-top: -65px;
+    }
+
+
+
+    .message {
+        width: 100%;
+        border-radius: 0;
+    }
+
     #w1 {
         display: none;
     }
@@ -338,11 +374,15 @@ select {
 
     .info_text {
         width: 100%;
-        margin-top: -40px;
+    }
+
+    .left_con2 {
+        padding: 0;
     }
 
     .app {
         width: 100%;
+
     }
 
     .info_text h1 {
@@ -384,6 +424,7 @@ select {
     select {
         padding: 5px;
         font-size: 15px !important;
+        width: 100% !important;
     }
 
     .do {
