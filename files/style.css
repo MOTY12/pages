@@ -1,26 +1,31 @@
 @font-face {
-    src: url('./font/AssociateSansBold.otf');
+    font-family: 'Associate bold';
+    src: url('../font/AssociateSansBold.otf');
     /* IE9 Compat Modes */
-    src: url('./font/AssociateSansBold.otf') format('embedded-opentype'),
+    src: url('../font/AssociateSansBold.otf') format('embedded-opentype'),
         /* IE6-IE8 */
         /* Super Modern Browsers */
-        url('./font/AssociateSansBold.otf') format('woff'),
+        url('../font/AssociateSansBold.otf') format('woff'),
         /* Pretty Modern Browsers */
-        url('./font/AssociateSansBold.otf') format('truetype'),
-        /* Safari, Android, iOS */
+        url('../font/AssociateSansBold.otf') format('truetype');
+    /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    src: url('./font/AssociateSansLight.otf');
+    font-family: 'Associate normal';
+    src: url('../font/AssociateSansLight.otf');
     /* IE9 Compat Modes */
-    src: url('./font/AssociateSansLight.otf') format('embedded-opentype'),
+    src: url('../font/AssociateSansLight.otf') format('embedded-opentype'),
         /* Super Modern Browsers */
-        url('./font/AssociateSansLight.otf') format('woff'),
+        url('../font/AssociateSansLight.otf') format('woff'),
         /* Pretty Modern Browsers */
-        url('./font/AssociateSansLight.otf') format('truetype'),
-        /* Safari, Android, iOS */
+        url('../font/AssociateSansLight.otf') format('truetype');
+    /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 
 
@@ -32,11 +37,19 @@ h5,
 h6,
 p {
     color: #8CA4AF;
+    font-family: 'Associate normal';
+
+}
+
+.form-check-label {
+    font-family: 'Associate normal' !important;
+    color: #8CA4AF;
 }
 
 a {
     color: #fff !important;
     text-decoration: none !important;
+    font-family: 'Associate normal';
 }
 
 .nopadding {
@@ -94,6 +107,8 @@ a {
 
 .left_con p {
     font-size: 28px;
+    font-family: 'Associate normal';
+
 }
 
 .blue {
@@ -147,6 +162,8 @@ a {
 .info_text h1 {
     font-weight: 300;
     font-size: 30px;
+    font-family: 'Associate normal';
+
     margin: 30px auto;
 }
 
@@ -227,7 +244,7 @@ select {
 
 .right_con {
     background: #f9f9f9 !important;
-    box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
+    box-shadow: inset 1px 31px 27px rgba(140, 164, 175, 0.2);
     text-align: center;
     box-sizing: border-box;
     height: 100vh;
@@ -237,6 +254,7 @@ select {
     align-items: center;
     justify-content: center;
 }
+
 
 .info {
     width: 100%;
