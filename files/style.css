@@ -1,5 +1,4 @@
 @font-face {
-    font-family: 'Associate Bold';
     src: url('./font/AssociateSansBold.otf');
     /* IE9 Compat Modes */
     src: url('./font/AssociateSansBold.otf') format('embedded-opentype'),
@@ -12,12 +11,9 @@
 }
 
 @font-face {
-    font-family: 'Associate normal';
     src: url('./font/AssociateSansLight.otf');
     /* IE9 Compat Modes */
     src: url('./font/AssociateSansLight.otf') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('./font/AssociateSansLight.otf') format('woff2'),
         /* Super Modern Browsers */
         url('./font/AssociateSansLight.otf') format('woff'),
         /* Pretty Modern Browsers */
@@ -36,7 +32,6 @@ h5,
 h6,
 p {
     color: #8CA4AF;
-    font-family: 'Associate normal';
 }
 
 a {
@@ -54,8 +49,10 @@ a {
 .wrapper {
     height: 100vh;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 .left_con {
@@ -63,7 +60,7 @@ a {
     box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
     text-align: center;
     box-sizing: border-box;
-    height: 95vh;
+    height: 100vh;
     padding: 50px;
     width: 100%;
     display: flex;
@@ -72,12 +69,22 @@ a {
     justify-content: space-between;
 }
 
+.app {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 70%;
+    margin: auto;
+}
+
 .left_con2 {
     background: #FFFFFF;
     box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
     text-align: center;
     box-sizing: border-box;
-    height: 95vh;
+    height: 100vh;
     padding: 50px;
     width: 100%;
     display: flex;
@@ -106,7 +113,6 @@ a {
 }
 
 .follow {
-    font-family: 'Associate normal';
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -151,7 +157,6 @@ a {
 }
 
 .info_text h3 {
-    font-family: 'Associate normal';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -213,11 +218,11 @@ select {
 }
 
 .right_con {
-    background: #e5e5e5;
+    background: #f9f9f9;
     box-shadow: 1px 31px 27px rgba(140, 164, 175, 0.1);
     text-align: center;
     box-sizing: border-box;
-    height: 95vh;
+    height: 100vh;
     padding: 50px;
     width: 100%;
     display: flex;
@@ -240,7 +245,6 @@ select {
 }
 
 .foot {
-    font-family: 'Associate normal';
     font-weight: 300;
     font-size: 15px;
     line-height: 111.5%;
@@ -264,7 +268,6 @@ select {
 
 .message h1 {
 
-    font-family: 'Associate normal';
     font-style: normal;
     font-weight: normal;
     font-size: 29px;
@@ -276,7 +279,6 @@ select {
 }
 
 .message p {
-    font-family: 'Associate normal';
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -295,6 +297,10 @@ select {
     display: none;
 }
 
+.container-fluid {
+    padding: 0 !important;
+}
+
 @media(max-width:900px) {
     #w1 {
         display: none;
@@ -309,7 +315,7 @@ select {
         font-size: 15px !important;
     }
 
-    .container {
+    .container-fluid {
         padding: 0 !important;
     }
 
@@ -327,6 +333,10 @@ select {
     .info_text {
         width: 100%;
         margin-top: -40px;
+    }
+
+    .app {
+        width: 100%;
     }
 
     .info_text h1 {
